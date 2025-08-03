@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="topbar">
+        <div class="logo">MyPortfolio</div>
+    
+        <!-- Hamburger Icon -->
+        <div id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" role="button"
+            tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h1>My Projects</h1>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('ctf')">CTF</button>
+            <button onclick="filterProjects('video')">Video</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <img src="Misc/images/project1.png" alt="Project 1" />
+                <h3>Personal Portfolio Website</h3>
+                <p>Category: Adding Link</p>
+                <a href="https://github.com/00KIWI/Portfolio-" target="_blank" class="btn project-btn">View Project</a>
+            </div>
+
+
+
+            <div class="project-card" data-category="ctf">
+                <img src="Misc/images/project2.png" alt="Project 2" />
+                <h3>CTF</h3>
+                <p>Category: Adding Image</p>
+            </div>
+
+            <div class="project-card" data-category="video">
+                <video controls width="100%">
+                    <source src="Misc/videos/v1.mp4" type="video/mp4" />
+                    Your browser does not support this video.
+                </video>
+                <h3>Basic Motion Graphics </h3>
+                <p>Category: Adding Video</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Bar -->
+    <footer>
+        <p>© 2025 Rachilung Rai. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
